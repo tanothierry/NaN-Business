@@ -1,0 +1,680 @@
+/*!
+ * © Devsfront
+ * Copyright Not A Number and his devs
+
+                      .
+                     d8b
+                   d88888b
+                 d888Y Y888b
+               d888Y  .  Y888b
+             d888Y   d8b   Y888b
+           d888Y   d88888b   Y888b
+            ""   d888Y Y888b   ""
+               d888Y  .  Y888b
+                ""   d8b   ""
+                   d88888b
+   8888b   88888     Y8b     8888b   88888
+    8888b   888       '       8888b   888
+    88888b  888               88888b  888
+    888Y88b 888    88888b.    888Y88b 888
+    888 Y88b888    "   "88b   888 Y88b888
+    888  Y88888   .d8888888   888  Y88888
+    888   Y8888   888   888   888   Y8888
+   88888   Y888   "Y88888"88 88888   Y888 
+ *---------------------------------------------
+ *
+ * MAIN.CSS
+ *
+    */
+
+  /* VARIABLES ********************************************* */
+
+:root{
+--nan-color-purple:#777ffe;
+/* --secondary-color: #3f3e56; */
+/* --ternary-color: #f5f6ff; */
+/* --ternary-color-gradient: #eaecfc; */
+--nan-color-teal: #2ea2a2;
+--color-white: #fff;
+--color-black: #0d0e1c;
+
+--default-transition: all .2s;
+}
+  /* FONTS ********************************************* */
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+  /* GENERAL ********************************************* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; /* 10px */
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+.pt-45{
+    padding-top: 4.5rem;
+    padding-bottom: 3.5rem;
+}
+
+
+ /* HEADER ********************************************* */
+
+
+
+#header{
+    height: 80vh;
+    width: 100%;
+}
+
+.header-carousel{
+    height: 80vh;
+}
+
+.slide1{
+    position: relative;
+}
+
+.carousel-img1,
+.carousel-img2,
+.carousel-img3{
+    width: 100%;
+    height: 80vh;
+    color: white;
+    
+}
+
+.carousel-img1{
+    background: linear-gradient(#2ea2a269, rgba(60, 64, 127, 0.411)), url('../images/formation1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-img2{
+    background: linear-gradient(#2ea2a269, rgba(60, 64, 127, 0.411)), url('../images/formation2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-img3{
+    background: linear-gradient(#2ea2a269, rgba(60, 64, 127, 0.411)), url('../images/formation3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-img1_title{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+}
+
+.carousel-img1_title p{
+    font-size: 2.6rem;
+}
+
+.carousel-img1_title h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.button-green{
+    border: 1px solid transparent;
+    border-radius: 5rem;
+    background-color: var(--nan-color-teal);
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button-green:hover{
+    transition: all .5s;
+    border: 1px solid var(--nan-color-teal);
+    background: #2ea2a20c;
+    color: var(--nan-color-teal);
+}
+
+.button-green:focus{
+    outline: none;
+}
+
+.carousel-circle{
+    width: 5rem;
+    height: 5rem;
+    background: var(--nan-color-purple);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    border-radius: 50%;
+}
+
+
+/* SECTION-ONE ********************************************* */
+
+
+.sectionOne{
+    min-height: 35rem;
+    margin-top: -8rem;
+}
+.sectionOne-care{
+    height: 25rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.39);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.bordure{
+    width: 95%;
+    height: 23rem;
+    border: .2rem solid var(--nan-color-purple);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s;
+}
+
+.bordure:hover{
+    width: 100%;
+    height: 25rem;
+    transition: all .4s;
+    border: .1rem solid var(--nan-color-purple);
+}
+
+
+
+/* SERVICES ********************************************* */
+
+
+#services{
+    margin-bottom: 3rem;
+    min-height: 50rem;
+}
+
+.list-row{
+    position: relative;
+}
+
+.circle-form{
+    position: absolute;
+    left: -15%;
+    top: 32%;
+    transform: translate(15%, -32%);
+    width: 38rem;
+    height: 38rem;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: rgba(46, 162, 162, 0.507);
+}
+
+.service-title{
+    min-height: 35rem;
+    z-index: 1000;
+    margin-left: 3rem;
+}
+
+.service-title h2{
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: -2rem;
+    margin-bottom: 4rem;
+}
+
+.service-title p{
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.service-list{
+    min-height: 35rem;
+}
+
+.service-list_row{
+    padding: 2rem;
+}
+
+.service-list_carre{
+    padding: 1.7rem;
+}
+
+.service-list-logo{
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1.8rem;
+}
+
+.service-list_carre h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.service-list_carre p{
+    text-align: justify;
+    margin: 1.4rem 0;
+    font-size: 1.4rem;
+}
+
+.text-color_green{
+    color: var(--nan-color-teal);
+    float: right;
+    font-size: 1.4rem;
+}
+
+
+/* SECTION-TREE ********************************************* */
+
+
+#section-tree{
+    width: 100%;
+    min-height: 35rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.727)), url('../images/img1.jpg');
+    background-attachment: fixed;
+}
+
+.section-tree_header h2{
+    color: rgb(243, 242, 242);
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.section-tree_text{
+    color: white;
+}
+
+.section-tree_text p{
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.section-tree_text ul li{
+    list-style-type: square;
+    font-size: 1.5rem;
+}
+
+.section-tree-button ul{
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.section-tree-button ul li{
+    display: inline-block;
+    padding-right: 3rem;
+}
+
+.button{
+    border: .1rem solid var(--nan-color-teal);
+    border-radius: 5rem;
+    background-color: var(--nan-color-teal);
+    color: white;
+    padding: .7rem 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button:hover{
+    background: transparent;
+    border: .1rem solid var(--nan-color-teal);
+    box-shadow: 0 0 8px 0 var(--nan-color-teal) inset, 0 0 15px 2px var(--nan-color-teal);
+    transform: scale(1.15);
+}
+
+.button:focus{
+    outline: none;
+}
+
+
+
+
+/* SECTION-FOUR ********************************** */
+
+.section-four{
+    padding: 3rem 0;
+    background: #dbdbdb36;
+}
+
+.section-four .section-four_header h2{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.section-four .section-four_descritpion p{
+    font-size: 1.3rem;
+    width: 65%;
+}
+
+.section-four .card-projet{
+    margin: 0 0 2rem 0;
+    padding: 0;
+    box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.158);
+    transition: all .4s;
+}
+
+.section-four .card-projet:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.199);
+    transition: all .4s;
+}
+
+.section-four .img-card{
+    background: linear-gradient(rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.836)), url('../images/imgform.jpg') no-repeat;
+    border: 1px solid var(--nan-color-purple);
+    height: 22rem;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.section-four h3{
+    font-size: 2.3rem;
+}
+
+.section-four .description-card,
+.section-four .title-card{
+    padding: 0 1.5rem;
+}
+
+.description-card p{
+    font-size: 1.3rem;
+}
+
+.link{
+    
+    font-size: 1.5rem;
+    color: var(--nan-color-teal);
+}
+
+
+
+/* TESTAMONIALS *************************************** */
+
+#section-testimonial{
+    padding-top: 5rem;
+    padding-bottom: 3rem ;
+}
+
+#section-testimonial h1{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#section-testimonial .section-testimonial_description{
+    font-size: 1.3rem;
+    width: 70%;
+}
+
+#section-testimonial a button{
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid var(--nan-color-teal);
+    transition: all .5s;
+}
+
+#section-testimonial a button:hover{
+    background: #2ea2a22d;
+    transition: all .5s;
+}
+
+#section-testimonial a button:focus{
+    outline: none;
+}
+
+.card-temoignage{
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--nan-color-teal);
+}
+
+.card-temoignage img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.card-temoignage .nom-temoignage{
+    font-weight: bold;
+}
+
+.card-temoignage .description-temoignage{
+    font-size: 1.3rem;
+}
+
+.card-temoignage .description-temoignage span{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/* popup css ********* */
+
+.box {
+    width: 40%;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all .5s;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup h2 span{
+    font-size: 4rem;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: rgb(214, 62, 62);
+}
+
+/* affichage de l'image */
+
+canvas {
+    margin: auto;
+    background: #ececec;
+    width: 100%;
+    height: 80%;
+}
+
+.btn-disabled {
+    color: #fff !important;
+}
+
+.content button{
+    padding: 1rem 1.5rem;
+    margin-right: 6%;
+    font-size: 1.3rem;
+    background: transparent;
+    border: 1px solid var(--nan-color-purple);
+    transition: all .5s;
+    float: right;
+}
+
+.content button:hover{
+    background: #7780fe48;
+    transition: all .5s;
+    transform: scale(1.05);
+}
+
+.form-right input,
+.form-right textarea{
+    border: 1px solid black;
+    width: 90%;
+    padding: .5rem;
+}
+
+.form-right input{
+    height: 3.5rem;
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+    font-weight: bold;
+}
+
+.form-right textarea{
+    height: 18.5rem;
+    min-height: 10rem;
+    max-height: 30rem;
+    font-size: 1.3rem;
+}
+
+.form-right input:focus{
+    outline: none;
+}
+
+.form-right input:focus,
+.form-right textarea:focus,
+.content button{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES ********************************** */
+
+@media screen and (min-width: 250px) and (max-width: 768px){
+    .circle-form{
+        position: absolute;
+        left: -70%;
+        top: 15%;
+        transform: translate(15%, -35%);
+    }
+
+    .section-tree_header h2{
+        font-size: 4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .section-tree_text ul{
+        margin-left: 2.3rem;
+    }
+
+    .section-tree-button ul li{
+        padding-right: 0;
+        margin: 1rem 1.5rem;
+    }
+
+    .section-four .section-four_header h2{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 4rem!important;
+    }
+}
+
+
+
+/* MEDIA QUERIES **************************** */
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 991px){
+
+    .form-right input{
+        margin-top: 1rem;
+    }
+
+    .form-right input,
+    .form-right textarea{
+        width: 100%;
+    }
+
+    .content button{
+        margin-top: 2rem;
+        margin-right: 0;
+    }
+
+    .popup h2{
+        margin-top: 3rem;
+    }
+
+    .popup h2 span{
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
