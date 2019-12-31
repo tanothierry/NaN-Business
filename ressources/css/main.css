@@ -70,6 +70,10 @@ a,a:hover{
     padding-bottom: 3.5rem;
 }
 
+h1{
+    font-size: 5rem;
+}
+
 
  /* HEADER ********************************************* */
 
@@ -78,6 +82,64 @@ a,a:hover{
 #header{
     height: 80vh;
     width: 100%;
+}
+
+#header .navbar{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-img{
+    width: 6rem;
+    height: 6rem;
+}
+
+
+.navbar-toggler-button{
+    background-color: #d6e4aa;
+}
+
+.nav li{
+    display: block;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+.nav li a{
+    color: white;
+    text-transform: capitalize;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.nav li a:hover{
+    color: var(--nan-color-purple);
+    transition: 0.5s;
+}
+
+
+/* jQuery Styles */
+.navbar-scroll{
+	background: rgb(49, 48, 48);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.6s;
+    color: black!important;
+}
+.nav-dropdown-scroll {
+	background: #e7eaea;
+    box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.header-box{
+    position: fixed;
+    top: 6%;
+    left: 6%;
+    transform: translate(-6%, -6%);
+    z-index: 12030;
+    max-width: 8rem;
+    max-height: 8rem;
 }
 
 .header-carousel{
@@ -94,7 +156,6 @@ a,a:hover{
     width: 100%;
     height: 80vh;
     color: white;
-    
 }
 
 .carousel-img1{
@@ -591,6 +652,102 @@ canvas {
 }
 
 
+/* CONTACTEZ-NOUS *****************************************/
+
+.section-five{
+    min-height: 28rem;
+    background-color: #f7f7f7;
+    padding: 3rem;
+}
+
+.section-five-title{
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.section-five-title h1::before{
+    content: '';
+    position: absolute;
+    height: .3rem;
+    width: 10%;
+    background-color: var(--nan-color-purple);
+    left: 2%;
+    bottom: 0;
+
+}
+
+.section-five_cardForm{
+    height: 15rem;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin: .1rem auto;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardForm-input{
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+}
+
+.cardForm-input:hover{
+    border: .1rem solid var(--nan-color-teal);
+}
+
+.button-submit{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--nan-color-teal);
+    border: none;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.button-submit:focus,
+.cardForm-input:focus{
+    outline: none;
+}
+
+
+.section-five_map{
+    height: 25rem;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: .1rem auto;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
+
+}
+
+/* PARTENERS *****************************************/
+
+
+.parteners{
+    min-height: 30rem;
+}
+
+.partener-logo{
+    width: 100%;
+    height: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.partener-logo{
+    background-image: url('../images/openclassroom.jpg');
+    background-size: contain;
+    filter: grayscale(100%);
+    transition: all .5s;
+}
+
+.partener-logo:hover{
+    filter: grayscale(1%);
+    transition: all .5s;
+    transform: scale(1.10);
+}
+
 
 
 
@@ -618,14 +775,15 @@ canvas {
 
     .section-tree-button ul li{
         padding-right: 0;
-        margin: 1rem 1.5rem;
+        margin: 1rem 1.2rem;
     }
 
     .section-four .section-four_header h2{
         font-size: 4rem;
     }
 
-    h2{
+    h2,
+    h1{
         font-size: 4rem!important;
     }
 }
@@ -633,15 +791,6 @@ canvas {
 
 
 /* MEDIA QUERIES **************************** */
-
-@media screen and (max-width: 700px){
-    .box{
-        width: 70%;
-    }
-    .popup{
-        width: 70%;
-    }
-}
 
 @media screen and (max-width: 991px){
 
@@ -674,7 +823,25 @@ canvas {
     .box{
         width: 70%;
     }
+
     .popup{
         width: 70%;
     }
+
+    .taille{
+        width: 50%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
