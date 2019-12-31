@@ -42,8 +42,7 @@
 }
   /* FONTS ********************************************* */
 
-    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
   /* GENERAL ********************************************* */
 
 *{
@@ -54,11 +53,12 @@
 
 html{
     font-size: 62.5%; /* 10px */
+    scroll-behavior: smooth;
 }
 
 body{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a,a:hover{
@@ -72,6 +72,10 @@ a,a:hover{
 
 h1{
     font-size: 5rem;
+}
+
+button:focus{
+    outline: none;
 }
 
 
@@ -96,7 +100,7 @@ h1{
 
 
 .navbar-toggler-button{
-    background-color: #d6e4aa;
+    background-color: #767ffe;
 }
 
 .nav li{
@@ -177,6 +181,7 @@ h1{
 }
 
 .carousel-img1_title{
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 50%;
     left: 15%;
@@ -188,8 +193,15 @@ h1{
 }
 
 .carousel-img1_title h1{
+    color: rgb(255, 255, 255);
     font-size: 4.5rem;
     font-weight: bold;
+    line-height: 5rem;
+    text-transform: none;
+    text-shadow: rgba(0,0,0, 0.4);
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .button-green{
@@ -458,9 +470,102 @@ h1{
 }
 
 .link{
-    
     font-size: 1.5rem;
     color: var(--nan-color-teal);
+}
+
+
+.section-four .section-four_card{
+    min-height: 25rem;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.section-four .card-one{
+    background: linear-gradient(#2ea2a286, #0d0e1cea), url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.section-four .card-two{
+    background: linear-gradient(#2ea2a286, #0d0e1cea), url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.section-four .card-three{
+    background: linear-gradient(#2ea2a286, #0d0e1cea), url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.section-four .card-one:hover{
+    background: linear-gradient(#2ea2a238, #0d0e1c9b), url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    transition: .5s;
+}
+
+.section-four .card-two:hover{
+    background: linear-gradient(#2ea2a238, #0d0e1c9b), url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    transition: background 1s ease;
+}
+
+.section-four .card-three:hover{
+    background: linear-gradient(#2ea2a238, #0d0e1c9b), url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    transition:  .5s;
+}
+
+.section-four .card-number{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card-number h1{
+    color: #0d0e1c;
+}
+
+.section-four_card-info{
+    display: flex;
+    align-items: center;
+    height: 25rem;
+    padding-left: 2.2rem;
+}
+
+.section-four_card-info h4{
+    font-size: 2.7rem;
+    color: white;
+    margin-bottom: 2.3rem;
+}
+
+.projet-plus-nan{
+    width: 100%;
+    text-align: center;
+}
+
+.projet-plus-nan button{
+    background: transparent;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: var(--nan-color-purple);
+    cursor: pointer;
+    border: .1rem solid var(--nan-color-purple);
+    transition: all .5s;
+    text-transform: capitalize;
+}
+
+.projet-plus-nan button:hover{
+    background: #767ffe57;
+    color: black;
+    transition: all .5s;
 }
 
 
@@ -657,7 +762,7 @@ canvas {
 .section-five{
     min-height: 28rem;
     background-color: #f7f7f7;
-    padding: 3rem;
+    padding: 3rem 2rem 5rem;
 }
 
 .section-five-title{
@@ -713,12 +818,15 @@ canvas {
 
 
 .section-five_map{
-    height: 25rem;
+    max-height: 25rem;
     background-color: rgb(255, 255, 255);
     width: 80%;
     margin: .1rem auto;
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
+}
 
+.section-five_map iframe{
+    max-height: 25rem;
 }
 
 /* PARTENERS *****************************************/
@@ -726,6 +834,11 @@ canvas {
 
 .parteners{
     min-height: 30rem;
+}
+
+.parteners h1{
+    font-weight: bold;
+    font-size: 5rem!important;
 }
 
 .partener-logo{
@@ -835,6 +948,15 @@ footer{
 
 @media screen and (max-width: 991px){
 
+    .nav li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.431);
+    }
+
+    .bg-navbar-responsive{
+        background-color: #0d0e1c;
+        margin-top: 1rem;
+    }
+
     .form-right input{
         margin-top: 1rem;
     }
@@ -871,6 +993,29 @@ footer{
 
     .taille{
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 411px){
+    .carousel-img1_title h1{
+        font-size: 2rem;
+    }
+
+    .section-five{
+        padding: 0;
+    }
+
+    .section-five_cardForm{
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .section-five_map{
+        width: 100%;
+    }
+
+    .cardForm-input {
+        border: .1rem solid #2ea2a2;
     }
 }
 
