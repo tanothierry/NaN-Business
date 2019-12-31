@@ -120,7 +120,7 @@ h1{
 
 /* jQuery Styles */
 .navbar-scroll{
-	background: rgb(49, 48, 48);
+	background: #0d0e1c;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
     transition-duration: 0.6s;
     color: black!important;
@@ -746,6 +746,47 @@ canvas {
     filter: grayscale(1%);
     transition: all .5s;
     transform: scale(1.10);
+}
+
+
+/* FOOTER ***************************************/
+
+footer{
+    background: #0d0e1c;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 5rem 0;
+    font-size: 1.3rem;
+}
+
+.localisation img,
+.mail img,
+.phone img,
+.reseaux img{
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.mail a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.reseaux img{
+    cursor: pointer;
+    margin: 0 .5rem 1rem .5rem;
+    filter: grayscale(100%);
+    transition: all .3s;
+}
+
+.reseaux img:hover{
+    filter: grayscale(0);
+    transition: all .3s;
+}
+
+.divider{
+    height: .1rem;
+    width: 95%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.267);
 }
 
 
