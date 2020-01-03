@@ -74,8 +74,13 @@ h1{
     font-size: 5rem;
 }
 
-button:focus{
+button:focus,
+textarea:focus{
     outline: none;
+}
+
+.pt-70{
+    padding-top: 7rem;
 }
 
 
@@ -217,9 +222,9 @@ button:focus{
 
 .button-green:hover{
     transition: all .5s;
-    border: 1px solid var(--nan-color-teal);
+    border: 1px solid var(--nan-color-purple);
     background: #2ea2a20c;
-    color: var(--nan-color-teal);
+    color: var(--nan-color-purple);
 }
 
 .button-green:focus{
@@ -303,6 +308,12 @@ button:focus{
     margin-left: 3rem;
 }
 
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10%;
+}
+
 .service-title h2{
     font-size: 8rem;
     font-weight: bold;
@@ -328,8 +339,8 @@ button:focus{
 }
 
 .service-list-logo{
-    width: 6rem;
-    height: 6rem;
+    width: 100%;
+    min-height: 9rem;
     margin-bottom: 1.8rem;
 }
 
@@ -348,6 +359,102 @@ button:focus{
     color: var(--nan-color-teal);
     float: right;
     font-size: 1.4rem;
+}
+
+
+/* PRODUITS ********************************************* */
+
+
+#produits{
+    min-height: 45rem;
+    background: #f7f7f7;
+    padding: 7rem 0;
+}
+
+.produits-header::after{
+    content: '';
+    position: absolute;
+    width: 7%;
+    height: .3rem;
+    background: var(--nan-color-purple);
+    border-radius: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.produits-header h1{
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.produits-header p{
+    font-size: 1.6rem;
+}
+
+.produits-card{
+    min-height: 30rem;
+    background-color: white;
+    box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.15);
+    padding: 1rem 1rem 0;
+    margin-bottom: 1.3rem;
+    width: 95%;
+    margin: 0 auto;
+    transition: .3s;
+}
+
+.produits-card:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.produits-card_img1{
+    width: 100%;
+    transform: scale(1.12);
+    border-radius: 1.2rem;
+    box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.15);
+    height: 20rem;
+    margin: 0 auto;
+    background: url('../images/entrepreneur-1340649_1280.jpg');
+    background-size: cover;
+    transition: .4s;
+    margin-bottom: 1rem;
+}
+
+.produits-card-info{
+    padding: 2rem;
+}
+
+.produits-card-info h3{
+    color: var(--nan-color-teal);
+    font-weight: 700;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.produits-card-info ul li{
+    list-style-type: circle;
+    font-size: 1.4rem;
+}
+
+.button-produits{
+    padding-top: 2.5rem;
+}
+
+.button-produits button{
+    background: transparent;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    color: var(--nan-color-purple);
+    cursor: pointer;
+    border: .1rem solid var(--nan-color-purple);
+    transition: all .5s;
+    text-transform: capitalize;
+    background: white;
+}
+
+.button-produits button:hover{
+    background: #767ffe94;
+    color: black;
 }
 
 
@@ -393,9 +500,9 @@ button:focus{
 }
 
 .button{
-    border: .1rem solid var(--nan-color-teal);
+    border: .1rem solid var(--nan-color-purple);
     border-radius: 5rem;
-    background-color: var(--nan-color-teal);
+    background-color: var(--nan-color-purple);
     color: white;
     padding: .7rem 2rem;
     font-size: 1.8rem;
@@ -420,7 +527,7 @@ button:focus{
 /* SECTION-FOUR ********************************** */
 
 .section-four{
-    padding: 3rem 0;
+    padding: 6.5rem 0;
     background: #dbdbdb36;
 }
 
@@ -432,7 +539,6 @@ button:focus{
 
 .section-four .section-four_descritpion p{
     font-size: 1.3rem;
-    width: 65%;
 }
 
 .section-four .card-projet{
@@ -472,6 +578,11 @@ button:focus{
 .link{
     font-size: 1.5rem;
     color: var(--nan-color-teal);
+}
+
+.marg{
+    margin-bottom: 2rem;
+    padding-top: 5rem;
 }
 
 
@@ -761,7 +872,6 @@ canvas {
 
 .section-five{
     min-height: 28rem;
-    background-color: #f7f7f7;
     padding: 3rem 2rem 5rem;
 }
 
@@ -782,14 +892,16 @@ canvas {
 }
 
 .section-five_cardForm{
-    height: 15rem;
-    background-color: rgb(255, 255, 255);
+    min-height: 25rem;
+    background-color: #f1F1F1;
     width: 90%;
-    margin: .1rem auto;
+    margin: .2rem auto;
+    padding: 2rem 1rem;
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
 }
 
 .cardForm-input{
@@ -798,14 +910,26 @@ canvas {
     padding: 1rem;
 }
 
-.cardForm-input:hover{
-    border: .1rem solid var(--nan-color-teal);
+.cardForm-input:hover,
+.cardForm-textarea:hover{
+    border-bottom: .1rem solid var(--nan-color-purple);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.cardForm-textarea{
+    width: 100%;
+    height: 7rem;
+    border: .05rem solid rgb(209, 207, 207);
+    overflow-y: auto;
+    padding-left: 1rem;
 }
 
 .button-submit{
     width: 100%;
     height: 3rem;
-    background-color: var(--nan-color-teal);
+    background-color: var(--nan-color-purple);
     border: none;
     font-size: 1.4rem;
     color: black;
@@ -818,7 +942,7 @@ canvas {
 
 
 .section-five_map{
-    max-height: 25rem;
+    min-height: 25rem;
     background-color: rgb(255, 255, 255);
     width: 80%;
     margin: .1rem auto;
@@ -826,7 +950,7 @@ canvas {
 }
 
 .section-five_map iframe{
-    max-height: 25rem;
+    max-height: 28rem;
 }
 
 /* PARTENERS *****************************************/
@@ -940,6 +1064,16 @@ footer{
     h1{
         font-size: 4rem!important;
     }
+
+    .marg{
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 1.2rem;
+    }
+
+    .section-five-title{
+        margin-top: 3rem;
+    }
 }
 
 
@@ -1015,7 +1149,7 @@ footer{
     }
 
     .cardForm-input {
-        border: .1rem solid #2ea2a2;
+        border: .1rem solid #bdbdbd;
     }
 }
 
