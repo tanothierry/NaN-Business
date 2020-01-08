@@ -1030,6 +1030,95 @@ footer{
 
 
 
+/***************    CSS PAGE DEMANDE    ***************************** */
+
+.carousel-img-d {
+    background: linear-gradient(#2ea2a269, rgba(60, 64, 127, 0.411)), url(../images/programming-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
+    color: white;
+}
+
+#form-demande{
+    font-size: 1.5rem;
+    margin: 5rem 0;
+    line-height: .1rem;
+}
+
+.block-left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-demande .bg-form{
+    padding: 5rem;
+}
+
+#form-demande .bg-form h2{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#form-demande hr{
+    background: var(--nan-color-purple);
+    width: 40%;
+    margin: auto;
+    height: .1rem;
+}
+
+.block-right{
+    border: 1px solid var(--nan-color-purple);
+    padding: 2rem;
+}
+
+#form-demande .forme-input,
+#form-demande textarea{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 1.3rem;
+}
+
+#form-demande textarea{
+    padding: 1rem;
+    max-height: 10%;
+}
+                                        
+#form-demande input:focus{
+    outline: none !important;
+}
+
+#form-demande .form-section-2 span{
+    line-height: 1.5rem;
+}
+
+.btn-validation button{
+    padding: 1.5rem;
+    background: transparent;
+    border: 1px solid var(--nan-color-purple);
+    transition: all .5s;
+}
+
+.inputFile,
+.btn-choose{
+    padding: .7rem;;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    font-size: 1.4rem;
+}
+
+.btn-validation button:hover{
+    background: #7780fe62;
+    transition: all .5s;
+}
+
+
+
+
+
 
 
 /* MEDIA QUERIES ********************************** */
